@@ -2,7 +2,6 @@
   "name": "react-shop",
   "version": "1.0.0",
   "description": "Ejercicio de platzi",
-  "homepage": "https://edmundo0994.github.io/shopExample/",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
