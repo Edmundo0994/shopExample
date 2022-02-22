@@ -3,6 +3,8 @@ import '@styles/Header.scss'
 import Menu from '@components/Menu'
 import MyOrder from '@containers/MyOrder'
 
+import { Link } from 'react-router-dom'
+
 import menu from '@icons/icon_menu.svg'
 import logo from '@logos/logo_yard_sale.svg'
 import shoppingCart from '@icons/icon_shopping_cart.svg'
@@ -24,36 +26,35 @@ const Header = () => {
 
   return (
     <>
-
       <nav>
         <img src={menu} alt="menu" className="menu" />
         <div className="navbar-left">
           <img src={logo} alt="logo" className="nav-logo" />
           <ul>
             <li>
-              <a href="/">All</a>
+              <Link to="/shopExample">All</Link>
             </li>
             <li>
-              <a href="/">Clothes</a>
+              <Link to="/shopExample">Clothes</Link>
             </li>
             <li>
-              <a href="/">Electronics</a>
+              <Link to="/shopExample">Electronics</Link>
             </li>
             <li>
-              <a href="/">Furnitures</a>
+              <Link to="/shopExample">Furnitures</Link>
             </li>
             <li>
-              <a href="/">Toys</a>
+              <Link to="/shopExample">Toys</Link>
             </li>
             <li>
-              <a href="/">Others</a>
+              <Link to="/shopExample">Others</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-right">
           <ul>
             <li className="navbar-email" onClick={handleToggle}>
-              platzi@example.com
+              example@gmail.com
             </li>
             <li className="navbar-shopping-cart" onClick={handleToggleCart}>
               <img src={shoppingCart} alt="shopping cart" />
@@ -62,8 +63,8 @@ const Header = () => {
           </ul>
         </div>
         {toggle && <Menu />}
-        {toggleOrders && <MyOrder />}
       </nav>
+      {toggleOrders && <MyOrder toggleOrders={toggleOrders} setToggleOrders={setToggleOrders}/>}
     </>
   );
 }
