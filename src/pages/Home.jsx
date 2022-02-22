@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductList from '@containers/ProductList';
 
 const Home = () => {
   return (
-    <ProductList />
+    <>
+      <ProductList />
+    </>
   );
 }
 

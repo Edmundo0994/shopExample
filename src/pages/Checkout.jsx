@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import OrderItem from '@components/OrderItem';
 import Menu from '@components/Menu';
 
+import AppContext from '../context/AppContext';
+
+import "@styles/Checkout.scss"
+
 const Checkout = () => {
+  const { state } = useContext(AppContext)
+  const today = new Date()
 	return (
 		<div className="Checkout">
 			<div className="Checkout-container">
@@ -10,8 +16,8 @@ const Checkout = () => {
 				<div className="Checkout-content">
 					<div className="order">
 						<p>
-							<span>03.25.21</span>
-							<span>6 articles</span>
+							<span>{today.toLocaleDateString()}</span>
+							<span>{state.cart.length}</span>
 						</p>
 						<p>$560.00</p>
 					</div>
