@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Ejercicio de platzi",
   "main": "src/index.js",
-  "homepage": "https://edmundo0994.github.io/shopExample/",
+  "homepage": "https://edmundo0994.github.io/shopExample",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --mode development",

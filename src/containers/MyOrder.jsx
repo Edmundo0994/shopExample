@@ -20,7 +20,7 @@ const MyOrder = () => {
 					<p>
 						<span>Total</span>
 					</p>
-					<p>{sumaTotal()}</p>
+					<p>${sumaTotal()}</p>
 				</div>
 				<button className="primary-button">
 					Checkout
