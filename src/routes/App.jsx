@@ -22,15 +22,15 @@ const App = () => {
       <BrowserRouter>
         <Layout>
           <Routes>
-            <Route exact path ="/" element={<Home />} />
-            <Route exact path="/login" element={<Login />}/>
-            <Route exact path="/password-recovery" element={<PasswordRecovery />} />
-            <Route exact path="/send-email" element={<SendEmail />} />
-            <Route exact path="/new-password" element={<NewPassword />} />
-            <Route exact path="/account" element={<MyAccount />} />
-            <Route exact path="/signup" element={<CreateAccount />} />
-            <Route exact path="/checkout" element={<Checkout />} />
-            <Route exact path="/orders" element={<Orders />} />
+            <Route exact path="/shopExample/" element={<Home />} />
+            <Route exact path="/shopExample/login" element={<Login />}/>
+            <Route exact path="/shopExample/password-recovery" element={<PasswordRecovery />} />
+            <Route exact path="/shopExample/send-email" element={<SendEmail />} />
+            <Route exact path="/shopExample/new-password" element={<NewPassword />} />
+            <Route exact path="/shopExample/account" element={<MyAccount />} />
+            <Route exact path="/shopExample/signup" element={<CreateAccount />} />
+            <Route exact path="/shopExample/checkout" element={<Checkout />} />
+            <Route exact path="/shopExample/orders" element={<Orders />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
