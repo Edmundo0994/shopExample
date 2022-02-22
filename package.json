@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Ejercicio de platzi",
   "main": "src/index.js",
+  "homepage": "https://edmundo0994.github.io/shopExample/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Edmundo Salamanca <esala.094@gmail.com>",
   "license": "MIT",
@@ -28,6 +31,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.6.0",
+    "gh-pages": "^3.2.3",
     "mini-css-extract-plugin": "^2.5.3",
     "sass": "^1.49.7",
     "sass-loader": "^12.6.0",
